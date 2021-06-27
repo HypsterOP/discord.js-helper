@@ -1,0 +1,20 @@
+{
+  "name": "discord.js-helper",
+  "version": "1.2.1",
+  "description": "Make your discord bots more awesome with discord.js-helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HypsterOP",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "discord-buttons": "^3.2.1",
+    "discord.js": "^12.5.3",
+    "discord.js-helper": "^1.2.0",
+    "node-fetch": "^2.6.1",
+    "superscript-text": "^1.0.0",
+    "voider": "^1.1.0"
+  }
+}
