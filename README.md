@@ -152,3 +152,29 @@ const { DiscordTogether } = require('discord.js-helper');
      client.login('your bot token goes here')
 
 ```
+## Meme
+
+##### Usage
+
+```js
+// Using Node.js (require)
+const helper = require('discord.js-helper');
+
+// Using ES6 (import /export)
+import helper from 'discord.js-helper';
+
+ const Discord = require('discord.js');
+ const client = new Discord.Client();
+const helper = require('discord.js-helper');
+     
+     
+     client.on('message', async (message) => {
+     if(message.content.toLowerCase() === '!meme') {
+          helper.meme(message)
+     });
+     };
+     });
+     
+     client.login('your bot token goes here')
+
+```
