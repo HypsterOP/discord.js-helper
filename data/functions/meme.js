@@ -1,5 +1,7 @@
 module.exports = meme;
 
+const Discord = require('discord.js')
+
 const fetch = require('node-fetch');
 
 const { MessageEmbed } = require('discord.js');
