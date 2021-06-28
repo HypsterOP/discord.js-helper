@@ -11,7 +11,7 @@ const { MessageEmbed } = require('discord.js');
  * @param {Discord.Message} message
  */
 
-function meme(message) {
+async function meme(message) {
 	if (!message)
 		throw new TypeError(
 			`'message' is a required argument and is missing! [discord.js-helper]`
