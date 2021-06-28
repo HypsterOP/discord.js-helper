@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
+    "colors": "^1.4.0",
     "discord-buttons": "^3.2.1",
     "discord.js": "^12.5.3",
     "discord.js-helper": "^1.2.0",
