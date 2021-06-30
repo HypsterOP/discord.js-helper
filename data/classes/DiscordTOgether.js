@@ -20,9 +20,9 @@ class DiscordTogether {
 	 * const Discord = require('discord.js');
 	 * const client = new Discord.Client();
 	 * const { DiscordTogether } = require('discord.js-helper');
-     * 
+     *
      * client.dt = new DiscordTogether(client);
-     * 
+     *
      * client.on('message', async (message) => {
      * if(message.content.toLowerCase() === '!chess') {
      * client.dt.createTogether(message.member.voice.channel.id, 'chess').then(async link => {
@@ -30,7 +30,7 @@ class DiscordTogether {
      * });
      * };
      * });
-     * 
+     *
      * client.login('your bot token goes here')
 	 */
 

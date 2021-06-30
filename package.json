@@ -17,5 +17,6 @@
     "node-fetch": "^2.6.1",
     "superscript-text": "^1.0.0",
     "voider": "^1.1.0"
-  }
+  },
+  "typings":"typings/index.d.ts"
 }
