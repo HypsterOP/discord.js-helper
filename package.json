@@ -1,6 +1,6 @@
 {
   "name": "discord.js-helper",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Make your discord bots more awesome with discord.js-helper",
   "main": "index.js",
   "scripts": {
