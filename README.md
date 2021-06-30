@@ -36,8 +36,7 @@ client.on('message' ,(message) => {
   }
 })
 ```
-![Embed Builder](/assets/embedBuilder.png)
-
+![Embed Builder](https://i.imgur.com/HGyoBFX.png)
 ## DiscordTogether
 
 ###### Example
@@ -60,8 +59,7 @@ client.on('message', async(msg) => {
 client.login('your bot token goes here')
 
 ```
-![Youtube Together](/assets/youtube-together.png)
-
+![Youtube Together](https://i.imgur.com/b5VqtXU.png)
 ###### Poker-Together
 
 ```js
@@ -79,17 +77,11 @@ client.on('message', async(msg) => {
 
 client.login("your token goes here")
 ```
-![Poker Together](/assets/poker-together.png)
+![Poker Together](https://i.imgur.com/r8SxyHZ.png)
 
 ###### Chess
 
 ```js
-// Using Node.js (require)
-const helper = require('discord.js-helper');
-
-// Using ES6 (import /export)
-import helper from 'discord.js-helper';
-
  const Discord = require('discord.js');
  const client = new Discord.Client();
 const { DiscordTogether } = require('discord.js-helper');
@@ -107,6 +99,7 @@ const { DiscordTogether } = require('discord.js-helper');
      client.login('your bot token goes here')
 
 ```
+![Chess Together](https://i.imgur.com/5Ne4MgW.png)
 
 ###### Fishing
 
@@ -134,16 +127,12 @@ const { DiscordTogether } = require('discord.js-helper');
      client.login('your bot token goes here')
 
 ```
+![Fishing Together](https://i.imgur.com/0Y9rVnj.png)
 ## Meme
 
 ##### Usage
 
 ```js
-// Using Node.js (require)
-const helper = require('discord.js-helper');
-
-// Using ES6 (import /export)
-import helper from 'discord.js-helper';
 
  const Discord = require('discord.js');
  const client = new Discord.Client();
