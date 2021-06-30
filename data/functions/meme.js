@@ -9,6 +9,7 @@ const { MessageEmbed } = require('discord.js');
 /**
  *
  * @param {Discord.Message} message
+ * @description Easy memes!
  */
 
 async function meme(message) {

@@ -2,9 +2,16 @@
   "name": "discord.js-helper",
   "version": "1.2.7",
   "description": "Make your discord bots more awesome with discord.js-helper",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.cjs",
+  "module":"./index.mjs",
+  "exports": {
+    ".": [
+      {
+        "require":"./index.cjs",
+        "import":"./index.mjs"
+      },
+      "./src/index.cjs"
+    ]
   },
   "author": "HypsterOP",
   "license": "ISC",
@@ -18,5 +25,21 @@
     "superscript-text": "^1.0.0",
     "voider": "^1.1.0"
   },
-  "typings":"typings/index.d.ts"
+  "types":"typings/index.d.ts",
+  "keywords": [
+    "discord.js",
+    "djs",
+    "discord.js wrapper",
+    "discord",
+    "discord.js-helper",
+    "discord.js easy",
+    "discord easy",
+    "random",
+    "agify",
+    "discord together",
+    "anime",
+    "vaporwave",
+    "subreddit",
+    "reddit"
+  ]
 }

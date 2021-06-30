@@ -36,7 +36,7 @@ class DiscordTogether {
 
     constructor(client, applications = apps) {
         if(!client) {
-            throw new TypeError(`No Client provided. [discord.js-helper]`);
+            throw new TypeError(`[Discord.js-Helper:DiscordTogether] No Client provided.`);
         }
 
         this.client = client;
@@ -71,12 +71,12 @@ class DiscordTogether {
                 }).then(response => response.json())
                     .then(invite => {
                         if(invite.error || !invite.code) {
-                            throw new Error(`An error has occured while trying to get the data please join the support server for more info => https://discord.gg/RHRgmAmYnf`)
+                            console.error(`An error has occured while trying to get the data please join the support server for more info => https://discord.gg/RHRgmAmYnf`)
                         };
                         retData.code = `https://discord.com/invite/${invite.code}`
                     })
             } catch (err) {
-                throw new Error(`an error occured while trying to do stuff join discord server for more info => https://discord.gg/RHRgmAmYnf`)
+                console.error(`an error occured while trying to do stuff join discord server for more info => https://discord.gg/RHRgmAmYnf`)
             }
             return retData;
         } else {
