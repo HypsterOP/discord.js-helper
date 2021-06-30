@@ -30,17 +30,13 @@ import helper from 'discord.js-helper';
 ###### Example
 
 ```js
-// Using Node.js (require)
-const helper = require('discord.js-helper');
-
-// Using ES6 (import /export)
-import helper from 'discord.js-helper';
 client.on('message' ,(message) => {
   if(message.content.startsWith('!embed')) {
     helper.embedBuilder(message).setTitle(`Hewwo there!`).setDescription(`Howe are you doin?! ☺`)
   }
 })
 ```
+![Embed Builder](/assets/embedBuilder.png)
 
 ## DiscordTogether
 
@@ -49,55 +45,41 @@ client.on('message' ,(message) => {
 ###### YouTube-Together
 
 ```js
-// Using Node.js (require)
-const helper = require('discord.js-helper');
-
-// Using ES6 (import /export)
-import helper from 'discord.js-helper';
-
- const Discord = require('discord.js');
- const client = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const { DiscordTogether } = require('discord.js-helper');
-     
-     client.dt = new DiscordTogether(client);
-     
-     client.on('message', async (message) => {
-     if(message.content.toLowerCase() === '!youtube-together') {
-     client.dt.createTogether(message.member.voice.channel.id, 'youtube').then(async link => {
-      message.channel.send(`Here is your youtube code link! ${link.code}`)
-     });
-     };
-     });
-     
-     client.login('your bot token goes here')
+
+const dt = new DiscordTogether(client);
+client.on('message', async(msg) => {
+  if(msg.content.startsWith("!youtube-together")) {
+    let link = await dt.createTogether(message.member.voice.channel.id, 'youtube');
+    await msg.channel.send(link.code);
+  }
+})
+
+client.login('your bot token goes here')
 
 ```
+![Youtube Together](/assets/youtube-together.png)
+
 ###### Poker-Together
 
 ```js
-// Using Node.js (require)
-const helper = require('discord.js-helper');
+const discord = require('discord.js');
+const client = new discord.Client();
+client.helper = require('discord.js-helper')
+client.on('ready', () => console.log(`I am ready!`));
+let dt = new client.helper.DiscordTogether(client);
+client.on('message', async(msg) => {
+    if(msg.content.startsWith("!poker-together")) {
+        let link = await dt.createTogether(msg.member.voice.channel.id, 'poker');
+        msg.channel.send(link.code);
+    }
+})
 
-// Using ES6 (import /export)
-import helper from 'discord.js-helper';
-
- const Discord = require('discord.js');
- const client = new Discord.Client();
-const { DiscordTogether } = require('discord.js-helper');
-     
-     client.dt = new DiscordTogether(client);
-     
-     client.on('message', async (message) => {
-     if(message.content.toLowerCase() === '!poker') {
-     client.dt.createTogether(message.member.voice.channel.id, 'poker').then(async link => {
-      message.channel.send(`Here is your poker code link! ${link.code}`)
-     });
-     };
-     });
-     
-     client.login('your bot token goes here')
-
+client.login("your token goes here")
 ```
+![Poker Together](/assets/poker-together.png)
 
 ###### Chess
 
@@ -111,9 +93,9 @@ import helper from 'discord.js-helper';
  const Discord = require('discord.js');
  const client = new Discord.Client();
 const { DiscordTogether } = require('discord.js-helper');
-     
+
      client.dt = new DiscordTogether(client);
-     
+
      client.on('message', async (message) => {
      if(message.content.toLowerCase() === '!chess') {
      client.dt.createTogether(message.member.voice.channel.id, 'chess').then(async link => {
@@ -121,7 +103,7 @@ const { DiscordTogether } = require('discord.js-helper');
      });
      };
      });
-     
+
      client.login('your bot token goes here')
 
 ```
@@ -138,9 +120,9 @@ import helper from 'discord.js-helper';
  const Discord = require('discord.js');
  const client = new Discord.Client();
 const { DiscordTogether } = require('discord.js-helper');
-     
+
      client.dt = new DiscordTogether(client);
-     
+
      client.on('message', async (message) => {
      if(message.content.toLowerCase() === '!fish') {
      client.dt.createTogether(message.member.voice.channel.id, 'fishing').then(async link => {
@@ -148,7 +130,7 @@ const { DiscordTogether } = require('discord.js-helper');
      });
      };
      });
-     
+
      client.login('your bot token goes here')
 
 ```
@@ -166,15 +148,15 @@ import helper from 'discord.js-helper';
  const Discord = require('discord.js');
  const client = new Discord.Client();
 const helper = require('discord.js-helper');
-     
-     
+
+
      client.on('message', async (message) => {
      if(message.content.toLowerCase() === '!meme') {
           helper.meme(message)
      });
      };
      });
-     
+
      client.login('your bot token goes here')
 
 ```
