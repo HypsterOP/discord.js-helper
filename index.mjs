@@ -7,6 +7,7 @@ import randomDog from './data/functions/randomDog';
 import randomSubreddit from './data/functions/randomSubreddit';
 import vaporwave from './data/functions/vaporwave';
 import DiscordTogether from './data/classes/DiscordTOGether';
+import morse from './data/functions/morse';
 /**
   * Discord.js-Helper
   * @module discord.js-helper
@@ -22,6 +23,7 @@ import DiscordTogether from './data/classes/DiscordTOGether';
   * @function {randomDog}
   * @function {randomSubreddit}
   * @function {vaporwave}
+  * @function {morse}
   * @class {DiscordTogether}
   */
 export default {
@@ -33,5 +35,6 @@ export default {
   randomDog,
   randomSubreddit,
   vaporwave,
+  morse,
   DiscordTogether
 }
