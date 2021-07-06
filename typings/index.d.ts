@@ -13,8 +13,13 @@ declare module "discord.js-helper" {
   export function randomDog(): void;
   // randomSubreddit
   export function randomSubreddit(): void;
+  
+  /*             TEXTS             */
   // vaporwave
   export function vaporwave(): string;
   // DiscordTogether
+
+  // Morse
+  export function morse(): string;
   
 }

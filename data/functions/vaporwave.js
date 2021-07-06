@@ -1,3 +1,10 @@
+/**
+ * 
+ * @name vaporwave
+ * @param {string} args
+ * @description Vaporwave-fieds the string, message, text.
+ */
+
 async function vaporwave(args) {
     const vaporwavefied = args.toString().split('').map(char => {
         const code = char.charCodeAt(0)

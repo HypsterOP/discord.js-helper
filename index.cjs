@@ -6,7 +6,9 @@ let embedBuilder = require('./data/functions/embedBuilder'),
   randomDog = require('./data/functions/randomDog'),
   randomSubreddit = require('./data/functions/randomSubreddit'),
   vaporwave = require('./data/functions/vaporwave'),
-  DiscordTogether = require('./data/classes/DiscordTOGether');
+  DiscordTogether = require('./data/classes/DiscordTOGether'),
+  morse = require('./data/functions/morse');
+
 /**
   * Discord.js-Helper
   * @module discord.js-helper
@@ -23,6 +25,7 @@ let embedBuilder = require('./data/functions/embedBuilder'),
   * @function {randomDog}
   * @function {randomSubreddit}
   * @function {vaporwave}
+  * @function {morse}
   * @class {DiscordTogether}
   */
 module.exports = {
@@ -34,5 +37,6 @@ module.exports = {
   randomDog,
   randomSubreddit,
   vaporwave,
+  morse,
   DiscordTogether
 }

@@ -1,1 +1,1 @@
-// This is where you can test the bot or some stuffs
+// Tests for js files, functions or classes;

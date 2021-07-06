@@ -1,14 +1,14 @@
 {
   "name": "discord.js-helper",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Make your discord bots more awesome with discord.js-helper",
   "main": "index.cjs",
-  "module":"./index.mjs",
+  "module": "./index.mjs",
   "exports": {
     ".": [
       {
-        "require":"./index.cjs",
-        "import":"./index.mjs"
+        "require": "./index.cjs",
+        "import": "./index.mjs"
       },
       "./src/index.cjs"
     ]
@@ -25,7 +25,7 @@
     "superscript-text": "^1.0.0",
     "voider": "^1.1.0"
   },
-  "types":"typings/index.d.ts",
+  "types": "typings/index.d.ts",
   "keywords": [
     "discord.js",
     "djs",
@@ -41,5 +41,8 @@
     "vaporwave",
     "subreddit",
     "reddit"
-  ]
+  ],
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  }
 }
